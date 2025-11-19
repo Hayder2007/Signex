@@ -61,7 +61,9 @@ export function FooterSection() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://discord.gg/D2R68AwgTG"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm text-muted-foreground transition-smooth hover:text-accent"
                 >
                   Discord
@@ -69,7 +71,9 @@ export function FooterSection() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://github.com/Hayder2007/Signex"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm text-muted-foreground transition-smooth hover:text-accent"
                 >
                   GitHub

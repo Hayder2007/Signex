@@ -11,21 +11,8 @@ export const metadata: Metadata = {
   description: 'Safely exchange tokens or NFTs between wallets. No middleman. No risk. Funds move only when both sides confirm.',
   generator: 'v0.app',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: '/signex-logo.png',
+    apple: '/signex-logo.png',
   },
 }
 
