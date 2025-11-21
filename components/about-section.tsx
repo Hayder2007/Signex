@@ -28,10 +28,10 @@ export function AboutSection() {
               We built Signex to make peer-to-peer trading easy, fast, and reliable for everyone, whether you're swapping crypto for crypto, crypto for NFTs, or NFTs for NFTs. Our mission is to give users full control over their assets while making trading safe and transparent.
             </p>
 
-            <div className="pt-4">
+            <div className="pt-4"><a href="https://exultant-background-1d4.notion.site/Signex-Full-Documentation-2b07f5420c3a80b69412cfafdfef9eb9">
               <button className="text-accent transition-smooth hover:text-blue-400 font-medium inline-flex items-center gap-2">
                 Explore More →
-              </button>
+              </button></a>
             </div>
           </div>
         </div>
