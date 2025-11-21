@@ -25,7 +25,7 @@ export function TrustSection() {
             <div>
               <h3 className="font-semibold text-foreground">No Middleman</h3>
               <p className="mt-1 text-muted-foreground">
-                Trades happen directly between wallets. Signex never holds your funds.
+                {"Trades happen through a public smart contract — Signex never holds your funds."}
               </p>
             </div>
           </div>
@@ -37,7 +37,7 @@ export function TrustSection() {
             <div>
               <h3 className="font-semibold text-foreground">Wallet-to-Wallet Custody</h3>
               <p className="mt-1 text-muted-foreground">
-                Your assets stay in your wallet throughout the entire transaction.
+                {"Your assets are managed via smart-contract escrow throughout the transaction — never held by Signex."}
               </p>
             </div>
           </div>

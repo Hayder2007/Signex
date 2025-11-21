@@ -8,7 +8,7 @@ const features = [
   {
     icon: TrustlessIcon,
     title: 'Trustless P2P',
-    description: 'Your assets stay in your wallet until both parties confirm. No middleman, no risk.',
+    description: 'Your assets are locked in a public smart contract until both parties confirm. No custody, no risk.',
   },
   {
     icon: FastIcon,

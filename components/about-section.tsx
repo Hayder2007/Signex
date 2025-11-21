@@ -21,7 +21,7 @@ export function AboutSection() {
             </h2>
             
             <p className="text-pretty text-base text-muted-foreground leading-relaxed sm:text-lg">
-              Signex is a simple, secure, and trustless platform that lets anyone exchange tokens or NFTs directly from wallet to wallet. There's no middleman, no KYC, and no risk — your assets only move when both sides confirm.
+              {"Signex is a simple, secure, and trustless platform that lets anyone exchange tokens or NFTs through smart-contract escrow. There\'s no middleman, no KYC, and no risk — your assets only move when both sides deposit & confirm."}
             </p>
 
             <p className="text-pretty text-base text-muted-foreground leading-relaxed sm:text-lg">

@@ -1,90 +1,163 @@
+"use client"
+
 export function P2PAnimatedIcon() {
   return (
-    <svg
-      viewBox="0 0 320 320"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-full w-full"
-    >
+    <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
       <defs>
         <style>{`
           @keyframes walletLeft {
             0%, 100% { transform: translateX(0); }
-            50% { transform: translateX(-25px); }
+            50% { transform: translateX(-30px); }
           }
           @keyframes walletRight {
             0%, 100% { transform: translateX(0); }
-            50% { transform: translateX(25px); }
+            50% { transform: translateX(30px); }
           }
           .wallet-left { animation: walletLeft 2.5s ease-in-out infinite; transform-origin: center; }
           .wallet-right { animation: walletRight 2.5s ease-in-out infinite; transform-origin: center; }
           @keyframes arrowLeft {
-            0%, 100% { opacity: 0; transform: translateX(-10px); }
+            0%, 100% { opacity: 0; transform: translateX(-15px); }
             40% { opacity: 0; }
             50% { opacity: 1; transform: translateX(15px); }
             60% { opacity: 0; }
-            100% { opacity: 0; transform: translateX(-10px); }
+            100% { opacity: 0; transform: translateX(-15px); }
           }
           @keyframes arrowRight {
-            0%, 100% { opacity: 0; transform: translateX(10px); }
+            0%, 100% { opacity: 0; transform: translateX(15px); }
             40% { opacity: 0; }
             50% { opacity: 1; transform: translateX(-15px); }
             60% { opacity: 0; }
-            100% { opacity: 0; transform: translateX(10px); }
+            100% { opacity: 0; transform: translateX(15px); }
           }
           .arrow-left { animation: arrowLeft 2.5s ease-in-out infinite; transform-origin: center; }
           .arrow-right { animation: arrowRight 2.5s ease-in-out infinite; transform-origin: center; }
         `}</style>
       </defs>
 
-      {/* Left Wallet */}
+      {/* Left Wallet - Using actual wallet icon shape */}
       <g className="wallet-left">
-        {/* Wallet body with gradient-like appearance */}
-        <rect x="20" y="100" width="100" height="160" rx="16" fill="#60a5fa" opacity="0.15" stroke="#60a5fa" strokeWidth="2.5" />
-        
-        {/* Wallet flap/top */}
-        <path d="M 20 116 Q 20 100 36 100 L 104 100 Q 120 100 120 116 L 120 140 L 20 140 Z" fill="#60a5fa" opacity="0.3" />
-        
-        {/* Card slots */}
-        <rect x="32" y="125" width="76" height="8" rx="2" fill="#60a5fa" opacity="0.4" />
-        <rect x="32" y="145" width="76" height="8" rx="2" fill="#60a5fa" opacity="0.3" />
-        <rect x="32" y="165" width="76" height="8" rx="2" fill="#60a5fa" opacity="0.3" />
-        
-        {/* Coins indicator */}
-        <circle cx="50" cy="215" r="6" fill="#60a5fa" opacity="0.5" />
-        <circle cx="70" cy="220" r="5" fill="#60a5fa" opacity="0.4" />
-        <circle cx="90" cy="215" r="6" fill="#60a5fa" opacity="0.5" />
+        {/* Main wallet body */}
+        <rect x="30" y="80" width="100" height="140" rx="14" fill="none" stroke="#60a5fa" strokeWidth="3" />
+
+        {/* Top rounded header */}
+        <path
+          d="M 40 80 Q 40 70 50 70 L 120 70 Q 130 80 130 90 L 130 100 L 30 100 Q 30 85 40 80"
+          fill="none"
+          stroke="#60a5fa"
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+
+        {/* Card lines */}
+        <line
+          x1="45"
+          y1="110"
+          x2="115"
+          y2="110"
+          stroke="#60a5fa"
+          strokeWidth="2.5"
+          opacity="0.7"
+          strokeLinecap="round"
+        />
+        <line
+          x1="45"
+          y1="130"
+          x2="115"
+          y2="130"
+          stroke="#60a5fa"
+          strokeWidth="2.5"
+          opacity="0.5"
+          strokeLinecap="round"
+        />
+        <line
+          x1="45"
+          y1="150"
+          x2="115"
+          y2="150"
+          stroke="#60a5fa"
+          strokeWidth="2.5"
+          opacity="0.5"
+          strokeLinecap="round"
+        />
+
+        {/* Lock/coin indicator on right */}
+        <circle cx="118" cy="180" r="8" fill="#60a5fa" />
       </g>
 
-      {/* Right Wallet */}
+      {/* Right Wallet - Using actual wallet icon shape */}
       <g className="wallet-right">
-        {/* Wallet body with gradient-like appearance */}
-        <rect x="200" y="100" width="100" height="160" rx="16" fill="#60a5fa" opacity="0.15" stroke="#60a5fa" strokeWidth="2.5" />
-        
-        {/* Wallet flap/top */}
-        <path d="M 200 116 Q 200 100 216 100 L 284 100 Q 300 100 300 116 L 300 140 L 200 140 Z" fill="#60a5fa" opacity="0.3" />
-        
-        {/* Card slots */}
-        <rect x="212" y="125" width="76" height="8" rx="2" fill="#60a5fa" opacity="0.4" />
-        <rect x="212" y="145" width="76" height="8" rx="2" fill="#60a5fa" opacity="0.3" />
-        <rect x="212" y="165" width="76" height="8" rx="2" fill="#60a5fa" opacity="0.3" />
-        
-        {/* Coins indicator */}
-        <circle cx="230" cy="215" r="6" fill="#60a5fa" opacity="0.5" />
-        <circle cx="250" cy="220" r="5" fill="#60a5fa" opacity="0.4" />
-        <circle cx="270" cy="215" r="6" fill="#60a5fa" opacity="0.5" />
+        {/* Main wallet body */}
+        <rect x="270" y="80" width="100" height="140" rx="14" fill="none" stroke="#60a5fa" strokeWidth="3" />
+
+        {/* Top rounded header */}
+        <path
+          d="M 280 80 Q 280 70 290 70 L 360 70 Q 370 80 370 90 L 370 100 L 270 100 Q 270 85 280 80"
+          fill="none"
+          stroke="#60a5fa"
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+
+        {/* Card lines */}
+        <line
+          x1="285"
+          y1="110"
+          x2="355"
+          y2="110"
+          stroke="#60a5fa"
+          strokeWidth="2.5"
+          opacity="0.7"
+          strokeLinecap="round"
+        />
+        <line
+          x1="285"
+          y1="130"
+          x2="355"
+          y2="130"
+          stroke="#60a5fa"
+          strokeWidth="2.5"
+          opacity="0.5"
+          strokeLinecap="round"
+        />
+        <line
+          x1="285"
+          y1="150"
+          x2="355"
+          y2="150"
+          stroke="#60a5fa"
+          strokeWidth="2.5"
+          opacity="0.5"
+          strokeLinecap="round"
+        />
+
+        {/* Lock/coin indicator on right */}
+        <circle cx="358" cy="180" r="8" fill="#60a5fa" />
       </g>
 
       {/* Left Arrow - moving right */}
       <g className="arrow-left">
-        <line x1="125" y1="175" x2="160" y2="175" stroke="#60a5fa" strokeWidth="3.5" strokeLinecap="round" />
-        <path d="M162 175 L148 163 M162 175 L148 187" stroke="#60a5fa" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
+        <line x1="145" y1="150" x2="180" y2="150" stroke="#60a5fa" strokeWidth="4" strokeLinecap="round" />
+        <path
+          d="M185 150 L170 135 M185 150 L170 165"
+          stroke="#60a5fa"
+          strokeWidth="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </g>
 
       {/* Right Arrow - moving left */}
       <g className="arrow-right">
-        <line x1="195" y1="175" x2="160" y2="175" stroke="#60a5fa" strokeWidth="3.5" strokeLinecap="round" />
-        <path d="M158 175 L172 163 M158 175 L172 187" stroke="#60a5fa" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
+        <line x1="255" y1="150" x2="220" y2="150" stroke="#60a5fa" strokeWidth="4" strokeLinecap="round" />
+        <path
+          d="M215 150 L230 135 M215 150 L230 165"
+          stroke="#60a5fa"
+          strokeWidth="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </g>
     </svg>
   )

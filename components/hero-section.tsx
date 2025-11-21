@@ -1,12 +1,12 @@
-'use client'
+"use client"
 
-import { P2PAnimatedIcon } from './icons/p2p-animated-icon'
+import { P2PAnimatedIcon } from "./icons/p2p-animated-icon"
 
 export function HeroSection() {
   const handleLearnMore = () => {
-    const aboutSection = document.getElementById('about')
+    const aboutSection = document.getElementById("about")
     if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' })
+      aboutSection.scrollIntoView({ behavior: "smooth" })
     }
   }
 
@@ -25,16 +25,19 @@ export function HeroSection() {
             <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
               Trustless P2P Swap
             </h1>
-            
+
             <p className="text-balance text-lg text-muted-foreground sm:text-xl">
-              Signex lets you safely exchange tokens or NFTs between wallets. No middleman. No risk. Funds move only when both sides confirm.
+              {"Signex lets you safely exchange tokens or NFTs between wallets via smart-contract escrow. No middleman. No risk. Funds move only when both sides deposit & confirm."}
             </p>
 
             <div className="flex flex-col gap-3 sm:flex-row">
               <button className="rounded-lg bg-accent px-8 py-3 font-medium text-primary transition-smooth hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background">
                 Launch Signex
               </button>
-              <button onClick={handleLearnMore} className="rounded-lg border-2 border-accent px-8 py-3 font-medium text-accent transition-smooth hover:bg-accent/10">
+              <button
+                onClick={handleLearnMore}
+                className="rounded-lg border-2 border-accent px-8 py-3 font-medium text-accent transition-smooth hover:bg-accent/10 hover:shadow-lg hover:shadow-accent/50"
+              >
                 Learn More
               </button>
             </div>
