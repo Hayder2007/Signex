@@ -18,7 +18,7 @@ export function FooterSection() {
             <h4 className="font-semibold text-foreground">Product</h4>
             <ul className="mt-4 space-y-2">
               <li>
-                <a href="#" className="text-sm text-muted-foreground transition-smooth hover:text-accent">
+                <a href="https://app.signex.site" className="text-sm text-muted-foreground transition-smooth hover:text-accent">
                   Launch App
                 </a>
               </li>

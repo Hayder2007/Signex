@@ -30,10 +30,10 @@ export function HeroSection() {
               {"Signex lets you safely exchange tokens or NFTs between wallets via smart-contract escrow. No middleman. No risk. Funds move only when both sides deposit & confirm."}
             </p>
 
-            <div className="flex flex-col gap-3 sm:flex-row">
+            <div className="flex flex-col gap-3 sm:flex-row"><a href="https://app.signex.site">
               <button className="rounded-lg bg-accent px-8 py-3 font-medium text-primary transition-smooth hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background">
                 Launch Signex
-              </button>
+              </button></a>
               <button
                 onClick={handleLearnMore}
                 className="rounded-lg border-2 border-accent px-8 py-3 font-medium text-accent transition-smooth hover:bg-accent/10 hover:shadow-lg hover:shadow-accent/50"
