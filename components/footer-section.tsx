@@ -23,7 +23,7 @@ export function FooterSection() {
                 </a>
               </li>
               <li>
-                <a href="https://exultant-background-1d4.notion.site/Signex-Full-Documentation-2b07f5420c3a80b69412cfafdfef9eb9" className="text-sm text-muted-foreground transition-smooth hover:text-accent">
+                <a href="https://docs.signex.site" className="text-sm text-muted-foreground transition-smooth hover:text-accent">
                   Documentation
                 </a>
               </li>
