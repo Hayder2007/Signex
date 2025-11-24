@@ -138,7 +138,7 @@ export function P2PAnimatedIcon() {
 
       {/* Left Arrow - moving right */}
       <g className="arrow-left">
-        <line x1="145" y1="150" x2="180" y2="150" stroke="#60a5fa" strokeWidth="4" strokeLinecap="round" />
+        <line x1="105" y1="150" x2="180" y2="150" stroke="#60a5fa" strokeWidth="4" strokeLinecap="round" />
         <path
           d="M185 150 L170 135 M185 150 L170 165"
           stroke="#60a5fa"
@@ -150,7 +150,7 @@ export function P2PAnimatedIcon() {
 
       {/* Right Arrow - moving left */}
       <g className="arrow-right">
-        <line x1="255" y1="150" x2="220" y2="150" stroke="#60a5fa" strokeWidth="4" strokeLinecap="round" />
+        <line x1="295" y1="150" x2="220" y2="150" stroke="#60a5fa" strokeWidth="4" strokeLinecap="round" />
         <path
           d="M215 150 L230 135 M215 150 L230 165"
           stroke="#60a5fa"

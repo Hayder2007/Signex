@@ -29,7 +29,7 @@ export function AboutSection() {
             </p>
 
             <div className="pt-4"><a href="https://docs.signex.site">
-              <button className="text-accent transition-smooth hover:text-blue-400 font-medium inline-flex items-center gap-2">
+              <button className="text-accent transition-smooth hover:text-blue-500 font-medium inline-flex items-center gap-2">
                 Explore More →
               </button></a>
             </div>

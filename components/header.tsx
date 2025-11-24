@@ -25,9 +25,10 @@ export function Header() {
           <a href="#features" className="text-sm text-muted-foreground transition-smooth hover:text-accent">Features</a>
           <a href="#how" className="text-sm text-muted-foreground transition-smooth hover:text-accent">How it Works</a>
           <a href="#roadmap" className="text-sm text-muted-foreground transition-smooth hover:text-accent">Roadmap</a>
+          <a href="#footer" className="text-sm text-muted-foreground transition-smooth hover:text-accent">Docs</a>
         </nav>
 <a href="https://app.signex.site">
-        <button className="rounded-lg bg-accent px-6 py-2 text-sm font-medium text-primary transition-smooth hover:bg-blue-400">
+        <button className="rounded-lg bg-accent px-6 py-2 text-sm font-medium text-primary transition-smooth hover:bg-blue-500">
           Launch Signex
         </button></a>
       </div>
