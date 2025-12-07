@@ -9,7 +9,7 @@ const roadmapPhases = [
       'Frontend / branding / social channels setup',
       'Demo dApp live (internal invite-only)',
       'Deploy MVP smart contract on Base testnet',
-      'Collect feedback + internal testing (trades, swaps, NFTs)',
+      'Collect feedback + Community testing (trades, swaps, NFTs)',
     ],
   },
   {
