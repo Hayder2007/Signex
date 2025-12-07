@@ -20,7 +20,7 @@ const roadmapPhases = [
       'Public deployment on Base mainnet',
       'Open to all users (commission-free on Base)',
       'UI / UX improvements: timers, notifications, trade history',
-      'Security improvements & monitoring',
+      'Apply for Base ecosystem grant',
     ],
   },
   {
@@ -30,8 +30,9 @@ const roadmapPhases = [
     items: [
       'Multi-chain support: add 1–3 additional chains',
       'Expand asset types: more tokens, NFTs, cross-chain readiness',
-      'Apply for ecosystem grants (Base + other chains)',
-      'Optional enhancements for liquidity & swap efficiency',
+      'Enhancements for liquidity & swap efficiency',
+      'Security improvements & monitoring',
+      
     ],
   },
   {
@@ -40,7 +41,7 @@ const roadmapPhases = [
     status: 'planned',
     items: [
       'Mobile app / responsive design for web & mobile',
-      'Monetization: optional fees, premium features, highlighted trades',
+      'Monetization: Small fees, premium features, highlighted trades',
       'Regional / local P2P support (fiat <> crypto)',
       'More features: partnerships, enhanced reputation & analytics',
     ],
