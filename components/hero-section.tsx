@@ -14,7 +14,10 @@ export function HeroSection() {
   }
 
   return (
-    <section id="hero" className="relative overflow-hidden bg-background py-12 sm:py-20 md:py-32 lg:py-40">
+    <section
+      id="hero"
+      className="relative overflow-hidden bg-background py-12 sm:py-20 md:py-32 lg:py-40 min-h-[100vh] sm:min-h-0"
+    >
       {/* Subtle background gradient */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -right-40 -top-40 h-80 w-80 rounded-full bg-accent/5 blur-3xl" />
@@ -23,14 +26,18 @@ export function HeroSection() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {isMobile ? (
-          <div className="flex flex-col items-center text-center">
-            <h1 className="text-3xl font-bold tracking-tight text-foreground mb-4">Trustless P2P Swap</h1>
+          <div className="flex flex-col items-center text-center min-h-[85vh] justify-around py-12">
+            <div className="space-y-2">
+              <h1 className="text-4xl font-bold tracking-tight text-foreground">Trustless P2P Swap</h1>
+            </div>
 
-            <p className="text-base text-muted-foreground mb-8 px-4 leading-relaxed text-center">
-              Safely trade tokens and NFTs peer-to-peer between wallets with no middleman risk.
-            </p>
+            <div className="px-6 max-w-md">
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Safely trade tokens and NFTs peer-to-peer between wallets with no middleman risk.
+              </p>
+            </div>
 
-            <div className="flex flex-row gap-2 w-full px-4 justify-center">
+            <div className="flex flex-row gap-2 w-full px-6 justify-center mt-8">
               <a href={getSignexAppUrl(true)} className="flex-[1.5] max-w-xs">
                 <button className="w-full rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-primary transition-smooth hover:bg-blue-500">
                   Launch Signex
@@ -45,9 +52,7 @@ export function HeroSection() {
             </div>
           </div>
         ) : (
-          /* Desktop Layout - Original grid layout with animation */
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
-            {/* Left Content */}
             <div className="flex flex-col justify-center space-y-6">
               <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
                 Trustless P2P Swap
@@ -74,7 +79,6 @@ export function HeroSection() {
               </div>
             </div>
 
-            {/* Right Visual - Animation only on desktop */}
             <div className="flex justify-center lg:justify-end">
               <div className="relative h-96 w-full max-w-sm">
                 <div className="animate-float absolute inset-0">
