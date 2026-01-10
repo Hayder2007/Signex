@@ -16,7 +16,7 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden bg-background py-12 sm:py-20 md:py-32 lg:py-40 min-h-[100vh] sm:min-h-0"
+      className="relative overflow-hidden bg-background py-12 sm:py-20 md:py-32 lg:py-40 min-h-[90vh] sm:min-h-0"
     >
       {/* Subtle background gradient */}
       <div className="absolute inset-0 overflow-hidden">
@@ -26,29 +26,40 @@ export function HeroSection() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {isMobile ? (
-          <div className="flex flex-col items-center text-center min-h-[85vh] justify-around py-12">
-            <div className="space-y-2">
+          <div className="flex flex-col items-center text-center pt-16 pb-12 space-y-12">
+            {/* Title Section */}
+            <div className="space-y-3">
               <h1 className="text-4xl font-bold tracking-tight text-foreground">Trustless P2P Swap</h1>
+              <div className="h-1 w-16 mx-auto bg-gradient-to-r from-accent/50 via-accent to-accent/50 rounded-full" />
             </div>
 
-            <div className="px-6 max-w-md">
-              <p className="text-lg text-muted-foreground leading-relaxed">
+            {/* Subtitle Section */}
+            <div className="px-6 max-w-md space-y-8">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 Safely trade tokens and NFTs peer-to-peer between wallets with no middleman risk.
               </p>
+
+              {/* Call-to-Action Buttons */}
+              <div className="flex flex-row gap-3 w-full justify-center">
+                <a href={getSignexAppUrl(true)} className="flex-[1.5] max-w-[180px]">
+                  <button className="w-full rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-primary transition-all duration-200 hover:bg-blue-500 hover:scale-105 shadow-lg shadow-accent/25">
+                    Launch Signex
+                  </button>
+                </a>
+                <button
+                  onClick={handleLearnMore}
+                  className="flex-1 max-w-[120px] rounded-lg border-2 border-accent/50 px-4 py-2 text-sm font-medium text-accent transition-all duration-200 hover:bg-accent/10 hover:border-accent"
+                >
+                  Learn More
+                </button>
+              </div>
             </div>
 
-            <div className="flex flex-row gap-2 w-full px-6 justify-center mt-8">
-              <a href={getSignexAppUrl(true)} className="flex-[1.5] max-w-xs">
-                <button className="w-full rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-primary transition-smooth hover:bg-blue-500">
-                  Launch Signex
-                </button>
-              </a>
-              <button
-                onClick={handleLearnMore}
-                className="flex-1 max-w-xs rounded-lg border-2 border-accent/50 px-4 py-2 text-sm font-medium text-accent transition-smooth hover:bg-accent/10"
-              >
-                Learn More
-              </button>
+            {/* Decorative Elements */}
+            <div className="flex gap-2 opacity-40">
+              <div className="h-2 w-2 rounded-full bg-accent animate-pulse" />
+              <div className="h-2 w-2 rounded-full bg-accent animate-pulse [animation-delay:200ms]" />
+              <div className="h-2 w-2 rounded-full bg-accent animate-pulse [animation-delay:400ms]" />
             </div>
           </div>
         ) : (
