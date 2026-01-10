@@ -34,7 +34,7 @@ export function HeroSection() {
             </div>
 
             {/* Subtitle Section */}
-            <div className="px-6 max-w-md space-y-8">
+            <div className="px-6 max-w-md space-y-12 pt-4">
               <p className="text-base text-muted-foreground leading-relaxed">
                 Safely trade tokens and NFTs peer-to-peer between wallets with no middleman risk.
               </p>
