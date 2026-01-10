@@ -21,7 +21,7 @@ export function AboutSection() {
               </div>
             </div>
 
-            <p className="text-sm text-muted-foreground leading-relaxed text-justify">
+            <p className="text-sm text-muted-foreground leading-relaxed text-left">
               Signex is a secure, trustless platform for exchanging tokens &amp; NFTs through smart-contract escrow. 
             </p>
 
